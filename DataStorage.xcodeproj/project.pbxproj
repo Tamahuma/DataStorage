@@ -12,6 +12,8 @@
 		FAC166AC1F2A47A100A86553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC166AA1F2A47A100A86553 /* Main.storyboard */; };
 		FAC166AE1F2A47A100A86553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC166AD1F2A47A100A86553 /* Assets.xcassets */; };
 		FAC166B11F2A47A100A86553 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC166AF1F2A47A100A86553 /* LaunchScreen.storyboard */; };
+		FAC166BA1F2A625700A86553 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC166B91F2A625700A86553 /* CoreData.framework */; };
+		FAC166BD1F2A62C200A86553 /* BigData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAC166BB1F2A62C200A86553 /* BigData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FAC166AD1F2A47A100A86553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC166B01F2A47A100A86553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC166B21F2A47A100A86553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC166B91F2A625700A86553 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FAC166BC1F2A62C200A86553 /* BigData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BigData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC166BA1F2A625700A86553 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				FAC166A51F2A47A000A86553 /* DataStorage */,
 				FAC166A41F2A47A000A86553 /* Products */,
+				FAC166B81F2A625700A86553 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +66,17 @@
 				FAC166AD1F2A47A100A86553 /* Assets.xcassets */,
 				FAC166AF1F2A47A100A86553 /* LaunchScreen.storyboard */,
 				FAC166B21F2A47A100A86553 /* Info.plist */,
+				FAC166BB1F2A62C200A86553 /* BigData.xcdatamodeld */,
 			);
 			path = DataStorage;
+			sourceTree = "<group>";
+		};
+		FAC166B81F2A625700A86553 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAC166B91F2A625700A86553 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC166BD1F2A62C200A86553 /* BigData.xcdatamodeld in Sources */,
 				FAC166A91F2A47A100A86553 /* ViewController.swift in Sources */,
 				FAC166A71F2A47A100A86553 /* AppDelegate.swift in Sources */,
 			);
@@ -304,6 +320,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAC166BB1F2A62C200A86553 /* BigData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAC166BC1F2A62C200A86553 /* BigData.xcdatamodel */,
+			);
+			currentVersion = FAC166BC1F2A62C200A86553 /* BigData.xcdatamodel */;
+			path = BigData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FAC1669B1F2A47A000A86553 /* Project object */;
 }
